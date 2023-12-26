@@ -5,4 +5,4 @@ if (await exists("build", { isReadable: true, isDirectory: true })) {
     await Deno.mkdirSync("build", { recursive: true })
 }
 
-await Deno.writeTextFile("build/fix_char.ts", generate())
+await Deno.writeTextFile("build/fix_char.js", generate())

@@ -27,7 +27,7 @@ function getTranslations(langCode) {
 
 function getClientInfo() {
   return {
-    "name" : SV.T("Fix encoding"),
+    "name" : SV.T("Fix char"),
     "category" : "",
     "author" : "wangyw15",
     "versionNumber" : 1,
