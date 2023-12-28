@@ -1,8 +1,14 @@
-import { generate } from './generator/fix_char.ts'
-import { exists } from "https://deno.land/std@0.210.0/fs/mod.ts"
+import * as esbuild from 'esbuild'
+import { mappingPlugin } from './src/fix_char/mapping_generator'
+import { svPlugin } from './src/sv'
 
-if (await exists("build", { isReadable: true, isDirectory: true })) {
-    await Deno.mkdirSync("build", { recursive: true })
-}
-
-await Deno.writeTextFile("build/fix_char.js", generate())
+esbuild.build({
+    entryPoints: ['src/fix_char/index.ts'],
+    bundle: true,
+    outfile: 'dist/fix_char.js',
+    plugins: [mappingPlugin, svPlugin],
+    treeShaking: false,
+    target: ['es2015'],
+    charset: 'utf8',
+    format: 'esm',
+})

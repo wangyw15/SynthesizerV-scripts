@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+        "baseUrl": "./",
+        "paths": {
+            "*": ["types/*"]
+        },
+        "module": "node16",
+        "target": "es2017"
+    }
+}

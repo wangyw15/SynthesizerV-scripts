@@ -1,0 +1,16 @@
+{
+  "name": "synthesizerv-scripts",
+  "version": "0.1.1",
+  "description": "",
+  "main": "build.ts",
+  "scripts": {
+    "build": "ts-node build.ts"
+  },
+  "author": "wangyw15",
+  "license": "MIT",
+  "devDependencies": {
+    "esbuild": "0.19.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}

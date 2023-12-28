@@ -3,7 +3,7 @@
 # Usage
 
 ```bash
-deno run --allow-write --allow-read build.ts
+npm run build
 ```
 
 then copy the files in `build` to the scripts folder
