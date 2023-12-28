@@ -205,4 +205,10 @@ declare module SV {
         answers: any;
         status: number;
     }
+
+    class CustomForm {
+        title: string;
+        buttons: 'YesNoCancel' | 'OkCancel';
+        widgets: Array<any>;
+    }
 }

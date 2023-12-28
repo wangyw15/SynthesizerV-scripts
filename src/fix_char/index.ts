@@ -40,7 +40,7 @@ function getClientInfo() {
 }
 
 function main() {
-  var form = {
+  var form: SV.CustomForm = {
     "title": SV.T("Fix char"),
     "buttons": "OkCancel",
     "widgets": [
